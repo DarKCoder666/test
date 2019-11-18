@@ -1,0 +1,21 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  
+  @media screen and (max-width: $sm) {
+    width: $xs_size;
+  }
+  @media screen and (min-width: $sm) {
+    width: $sm_size;
+  }
+  @media screen and (min-width: $md) {
+    width: $md_size;
+  }
+  @media screen and (min-width: $lg) {
+    width: $lg_size;
+  }
+  @media screen and (min-width: $xl) {
+    width: $xl_size;
+  }
+}

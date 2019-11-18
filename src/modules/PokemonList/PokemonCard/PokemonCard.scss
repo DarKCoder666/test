@@ -1,0 +1,38 @@
+@mixin random-bgr() {
+  $color: rgb(random(255), random(255), random(255));
+  background: $color;
+}
+
+.pokemonCard {
+  margin: 10px;
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+
+  &-wrap {
+    border: none !important;
+  }
+
+  &-title {
+    text-transform: capitalize;
+  }
+
+  &-types {
+    display: flex;
+    justify-content: center;
+    span {
+      margin: 5px;
+      padding: 5px;
+      text-transform: capitalize;
+      display: block;
+      $num-colors: 10;
+      text-shadow: 0 0 3px white;
+      border-radius: 4px;
+
+      @for $i from 0 to $num-colors {
+        &:nth-child(#{$i}) {
+          @include random-bgr();
+        }
+      }
+    }
+  }
+}
