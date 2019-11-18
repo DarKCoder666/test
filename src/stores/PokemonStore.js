@@ -7,7 +7,6 @@ import {
 import { isThereActivePokemonType, removeRepeatedObjects } from '../utils/filtration';
 
 const apiBase = 'https://pokeapi.co/api/v2';
-const maxNumberOfPokemons = 1000;
 
 class PokemonStore {
   pokemonsList = [];

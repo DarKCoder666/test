@@ -1,0 +1,12 @@
+.filter {
+  text-align: center;
+  &-searchSize {
+    display: flex;
+    justify-content: center;
+    margin: 15px auto;
+  }
+
+  &-tagfilter {
+    margin-top: 15px;
+  }
+}

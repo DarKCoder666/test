@@ -11,7 +11,7 @@ export class PokemonCard extends Component {
     ));
 
     return (
-      <a href="#" className="pokemonCard">
+      <div className="pokemonCard">
         <Card
           hoverable
           className="pokemonCard-wrap"
@@ -28,7 +28,7 @@ export class PokemonCard extends Component {
               </div>
             } />
         </Card>
-      </a>
+      </div>
     )
   }
 }
